@@ -1,0 +1,19 @@
+.Home{
+    background-color:   beige;
+    vertical-align: baseline;
+    text-align: center;
+    font: inherit;
+    font-size: 100%;
+    size: 100vh;
+    position: relative;
+}
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    border:1px green solid;
+    height: 100px;
+    width: 100px;
+}
+
