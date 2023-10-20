@@ -1,41 +1,49 @@
     html {
-        background-color: rgb(208, 231, 210);
-      }
+      scrollbar-base-color: green;
+    }
       
       .heading{
         background-image: linear-gradient(rgb(40, 112, 1),green,rgb(5, 162, 8));
         border: ridge 1px white;
       }
       
-      .logo,.Buttons {
-        position: relative;
-        display: flex;
+      .logo{
+        display: grid;
         justify-content: center;
       }
-
-      #ad,#nb,#ob,#sl,#gy,#cr{
-        position: relative;
-        width:200px ;
-        background-image: linear-gradient(rgb(74, 194, 9),rgb(8, 206, 8),rgb(11, 196, 14));
-        border:1px solid black;
+      .Buttons {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Make it responsive */
+        gap: 10px; /* Add spacing between buttons */
+      }
+      
+      #ad,
+      #nb,
+      #ob,
+      #sl,
+      #gy,
+      #cr {
+        width: 100%; /* Make buttons take up full width of their container */
+        max-width: 200px; /* Add a max-width to prevent buttons from becoming too wide */
+        height: auto;
+        background-image: linear-gradient(rgb(74, 194, 9), rgb(8, 206, 8), rgb(11, 196, 14));
+        border: 1px solid black;
         border-radius: 10px;
-        margin-left: 5px;
-        font-size: 1em;
+        font-size: 70%;
         font-weight: bold;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      }
-      #ad:hover{
-        background-image: liear-gradient (rg);
-        cursor: pointer;
+        margin: 0 auto; /* Center the buttons horizontally */
       }
 
       #LUcator{
         position: relative;
         height: 100px;
-        width: 150px;
+        width: auto;
         border-radius: 100%;
         border: black 1px solid;
         margin: 10px;
+        
       }
     
       #map {
