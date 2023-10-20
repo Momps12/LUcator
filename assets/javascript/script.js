@@ -42,7 +42,7 @@ const key = 'w8QTstofKOVCXZdlVo4J';
       display: block;
     }
 
-    button {
+    .butt {
       color: white;
       width: 100px;
       height: 25px;
@@ -55,7 +55,7 @@ const key = 'w8QTstofKOVCXZdlVo4J';
       cursor: pointer;
     }
 
-    button:hover {
+    .butt:hover {
       background-color: blue;
     }
 
@@ -66,7 +66,7 @@ const key = 'w8QTstofKOVCXZdlVo4J';
         <h2>LU02</h2>
         <p></p>
         <p></p>
-        <button>View 3D</button>
+        <button class="butt">View 3D</button>
       </div> 
 </body>
 </html>`;
