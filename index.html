@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.maptiler.com/maptiler-sdk-js/v1.1.1/maptiler-sdk.umd.js"></script>
+  <link href="https://cdn.maptiler.com/maptiler-sdk-js/v1.1.1/maptiler-sdk.css" rel="stylesheet">
+  <script src="https://cdn.maptiler.com/leaflet-maptilersdk/v1.0.0/leaflet-maptilersdk.js"></script>  
+  <link rel="stylesheet" href="assets/css/styles1.css">
+  <link rel="icon" href="src/LU.Cator.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <style>
+  
+  .container {
+      font-family: Helvetica;
+      font-weight: bold;
+      text-align: center !important;
+      position: relative !important;
+      justify-content: center !important;
+      align-items: center;
+      max-width: 100%;
+      margin: 0 auto;
+      max-height: 150px;
+      z-index: 5;
+  }
+  #sg{
+    opacity: 70%;
+  }
+  #cator{
+    font-size: 75%;
+    color: black;
+    text-shadow: white 3px 3px 3px;
+  }
+
+  h1{
+      top: 0;
+      margin-bottom: 10px;
+      font-size: 200%;
+      font-weight: bolder;
+      color: rgb(255, 255, 255);
+      text-shadow: gold 5px 3px 3px;
+  }
+
+  button {
+      margin: 0px;
+      width: 10%;
+  }
+  
+  textarea {
+      height: 20px;
+      resize: none;
+      margin: 0px;
+      max-width: 300px;
+
+  }
+      </style>
+    <h1><img id="logo" src="src/LU.Cator.png">LU<span id="cator">CATOR</span></h1>
+       <div id="sg">
+        <button id="strbtn"><i class="fas fa-microphone"></i></button>
+        <textarea id="output" rows="4" cols="50" placeholder="Search...."></textarea>
+        <button id="srchbtn"><i class="fa fa-search"></i></button>
+      </div>
+    </div>
+<script src="assets/javascript/voicesearch.js"></script>
+
+<div id="mySidebar" class="sidebar">
+  <a href="#socials">About</a>
+  <a href="#">New Building</a>
+  <a href="#">Oreta Building</a>
+  <a href="#">Canteen</a>
+  
+</div> 
+
+<div id="main">
+  <button class="hamburger" onclick="toggleNav()">&#9776;</button> 
+  <p></p>
+</div>
+<script src="assets/javascript/sidebar.js"></script>
+
+<div id="map">
+  <a class="home" href="#map"><i class="fas fa-home">UP</i><a>
+</div>
+<script src="assets/javascript/script.js"></script>
+
+<footer>
+  
+  <div id="socials" class="footerContainer"> 
+      <div class="socialIcons"> 
+          <a href="https://www.facebook.com/LagunaUniversityOfficial" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.youtube.com/@lagunauniversity9763" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.instagram.com/lucscofficial/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://lu.edu.ph/" target="_blank"><i class="fa brands fa-globe"></i></a>
+      </div>
+      <div class="footerNav">
+          <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#"><i class="fas far fas fa-envelope-open-text">Email</i></a></li>         
+              <li><a href="#">Address</a></li>
+              <li><a href="#">Contacts</a></li>
+          </ul> 
+      </div>
+  </div>
+</footer>
+</body>
+</html>
