@@ -3,7 +3,7 @@ const key = 'w8QTstofKOVCXZdlVo4J';
     zoomControl:true,
     minZoom:16.3,
     maxZoom:22
-  }).setView([14.2557, 121.4064], 17);
+  }).setView([14.2557, 121.4064], 18);
   document.addEventListener("DOMContentLoaded", function () {
 
   function zoomIn() {
